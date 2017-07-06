@@ -1,0 +1,20 @@
+uuid: 563c1afc-4d43-49a6-8b8d-198cbed9f4ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - poll
+id: poll.poll.default
+targetEntityType: poll
+bundle: poll
+mode: default
+content:
+  uid:
+    type: entity_reference_autocomplete
+    weight: -10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

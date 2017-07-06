@@ -1,0 +1,90 @@
+uuid: 2034e7ab-d0a6-45cb-a0c8-c4bdc13860c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.match.field_bet
+    - field.field.node.match.field_date
+    - field.field.node.match.field_teams
+    - field.field.node.match.field_winner
+    - node.type.match
+  module:
+    - datetime
+    - inline_entity_form
+    - path
+id: node.match.default
+targetEntityType: node
+bundle: match
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_bet:
+    weight: 35
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+  field_date:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_teams:
+    weight: 32
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_winner:
+    weight: 34
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

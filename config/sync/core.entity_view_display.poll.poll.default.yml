@@ -1,0 +1,14 @@
+uuid: f2462892-49e2-4360-b628-fcdc7506b657
+langcode: en
+status: true
+dependencies:
+  module:
+    - poll
+id: poll.poll.default
+targetEntityType: poll
+bundle: poll
+mode: default
+content:
+  poll_votes:
+    weight: 0
+hidden: {  }

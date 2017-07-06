@@ -1,0 +1,23 @@
+uuid: 59b1aac9-49f1-44d9-8b2c-5eb53b99957f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bet_amount
+    - node.type.tournament
+id: node.tournament.field_bet_amount
+field_name: field_bet_amount
+entity_type: node
+bundle: tournament
+label: 'Bet Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

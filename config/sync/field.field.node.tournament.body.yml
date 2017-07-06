@@ -1,0 +1,22 @@
+uuid: c586b63a-e64b-40de-ac68-5f2a901c1d75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tournament
+  module:
+    - text
+id: node.tournament.body
+field_name: body
+entity_type: node
+bundle: tournament
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

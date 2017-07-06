@@ -1,0 +1,18 @@
+uuid: 121bfc5b-7ccb-467b-8976-91eaf8b787d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team.field_logo
+    - node.type.team
+  module:
+    - user
+id: node.team.teaser
+targetEntityType: node
+bundle: team
+mode: teaser
+content: {  }
+hidden:
+  field_logo: true
+  links: true

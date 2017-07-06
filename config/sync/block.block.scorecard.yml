@@ -1,0 +1,36 @@
+uuid: 280e6155-1ef2-4dcc-8597-1d00e3c0c80f
+langcode: en
+status: true
+dependencies:
+  module:
+    - betting
+    - ctools
+    - node
+  theme:
+    - drupal8_parallax_theme
+id: scorecard
+theme: drupal8_parallax_theme
+region: content
+weight: -5
+provider: null
+plugin: scorecard
+settings:
+  id: scorecard
+  label: Scorecard
+  provider: betting
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      tournament: tournament
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      tournament: tournament
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

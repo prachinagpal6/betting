@@ -1,0 +1,25 @@
+uuid: d3d52682-1ee1-4d90-b610-e97644df641b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team.field_logo
+    - node.type.team
+  module:
+    - image
+    - user
+id: node.team.default
+targetEntityType: node
+bundle: team
+mode: default
+content:
+  field_logo:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  links: true

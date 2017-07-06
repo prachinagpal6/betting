@@ -1,0 +1,22 @@
+uuid: f14a5d51-50e8-4e75-9c3d-89e348937c9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal8_parallax_theme
+_core:
+  default_config_hash: RWBdR3xiZQqFnkVP12Zuf9gXX8P_vomYO-MrNa-5mBI
+id: drupal8_parallax_theme_help
+theme: drupal8_parallax_theme
+region: highlighted
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

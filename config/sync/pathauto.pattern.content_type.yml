@@ -1,0 +1,26 @@
+uuid: c1268d6a-6b5f-46e7-a271-ef81a15c62e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_type
+label: 'Content Type'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  01392d84-bb93-4d64-8d35-35283f9a5887:
+    id: node_type
+    bundles:
+      article: article
+      match: match
+      page: page
+      team: team
+      tournament: tournament
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 01392d84-bb93-4d64-8d35-35283f9a5887
+selection_logic: and
+weight: -5
+relationships: {  }
