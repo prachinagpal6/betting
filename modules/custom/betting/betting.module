@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\node\Entity\Node;
+use Drupal\poll\Entity\Poll;
+
+/**
+ * Implements hook_cron().
+ */
+function betting_cron() {
+//  $last_run = \Drupal::state()->get('betting.last_run', 0);
+//  // If 60 minutes passed since last time.
+//  if ((REQUEST_TIME - $last_run) > 3600) {
+//    $run = date('c', $last_run);
+//
+//    $query = db_query("SELECT entity_id from {node__field_date} WHERE field_date_value > :timestamp AND field_date_value < :now", [
+//      ':timestamp' => $run,
+//      ':now' => REQUEST_TIME + 3600,
+//    ]);
+//
+//    $mids = $query->fetchAll();
+//    foreach ($mids as $mid) {
+//      $match = Node::load($mid->entity_id);
+//      $pid = $match->get('field_bet')->getValue()[0]['target_id'];
+//      $poll = Poll::load($pid);
+//      if ($poll->isOpen()) {
+//        $poll->set('status', 0);
+//        $poll->save();
+//      }
+//    }
+//
+//    // Update last run.
+//    \Drupal::state()->set('betting.last_run', REQUEST_TIME);
+//  }
+}
+

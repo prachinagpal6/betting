@@ -1,0 +1,9 @@
+name: Betting
+type: module
+description: Enables betting for Drupal.
+package: Custom
+core: 8.x
+dependencies:
+  - drupal:block
+  - drupal:node
+

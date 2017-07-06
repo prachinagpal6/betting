@@ -1,0 +1,7 @@
+rootUrl: http://yandex.com
+gridUrl: http://selenium.example.com:4444/wd/hub
+
+browsers:
+  PhantomJS:
+    desiredCapabilities:
+      browserName: phantomjs
